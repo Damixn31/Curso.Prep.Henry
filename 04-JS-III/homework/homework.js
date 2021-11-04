@@ -68,7 +68,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for(let i = 0; i < array.length; i++) {
-    if(array(i) === elemento) {
+    if(array[i] === elemento) {
       return true;
     }
   }
@@ -83,7 +83,7 @@ function agregarNumeros(numeros) {
   var contador = 0;
   
   for(let i = 0; i < numeros.length; i++) {
-    contador = numeros[i];
+    contador = contador + numeros[i];
   }
   return contador;
 }
@@ -139,10 +139,10 @@ function cuentoElementos(arreglo){
   var cont = 0;
   for(var i = 0; i < arreglo.length; i++) {
     if(arreglo[i] > 18) {
-
+     cont++;
     }
-  }
-  return cont; 
+  } 
+  return cont;
 }
 
 
@@ -255,13 +255,12 @@ function continueStatement(numero) {
   var suma = numero;
   
   for(var i = 0; i < 10; i++) {
-    if( i === 5) continue
-    numero = numero + 2;
+    if(i === 5) continue
+    suma = suma + 2;
     sumArray.push(suma)
   }
-  return sumArray;
+  return sumArray
 }
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------

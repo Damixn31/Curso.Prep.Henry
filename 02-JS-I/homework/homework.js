@@ -13,10 +13,10 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 4.2;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -107,9 +107,9 @@ mayorQueCincuenta(51, 50);
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  console.log(x % y);
+  return (x % y);
 }
-obtenerResto(12, 5);
+obtenerResto(2, 3);
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
@@ -177,12 +177,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if (numero === 0) {
+  if (numero === 0) {
     return false;
-} else if (numero > 0) {
-   return "es positivo";
-} else if (numero < 0) {
-   return "es negativo";
+  } else if (numero > 0) {
+   return "Es positivo";
+  } else if (numero < 0) {
+   return "Es negativo";
+  }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -204,7 +205,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola " + nombre + "!";
+  return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -242,12 +243,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length > 1) return "Dato Incorrecto";
+  if (letra.length > 1) return "Dato incorrecto";
     else if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
      return "Es vocal";
     } return "Dato incorrecto";
-  }
 }
+
 
 
 

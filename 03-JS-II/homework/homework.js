@@ -19,7 +19,7 @@ function mayoriaDeEdad(edad) {
     if (edad >= 18) {
       return "Allowed";
      } else {
-      return "not allowed"
+      return "Not allowed"
     }
 }
   
@@ -35,7 +35,9 @@ function conection(status) {
     return "Away";
   }else {
     return "Offline"
-  } 
+  }
+}
+ 
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -44,16 +46,17 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-   if (idioma === "aleman") {
+  if(idioma === "aleman") {
     return "Guten Tag!";
-  }else if (idioma === "mandarin") {
+  }else if(idioma === "mandarin") {
     return "Ni Hao!";
-  }else if (idioma === "ingles") {
+  }else if(idioma === "ingles") {
     return "Hello!";
-  }else {
+  }else{
     return "Hola!";
   }
 }
+
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -145,12 +148,12 @@ function operadoresLogicos(num1, num2, num3) {
     }else if ((num1 > num2) && (num1 >num3) && (num1 > 0)) {
       return "Número 1 es mayor y positivo";
     }else if (num3 > num1 && num3 > num2){
-      return num3++;
+      return num3 + 1;
     }else {
       return false;
     }
-  }
 }
+
 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
@@ -186,7 +189,7 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   let arr = [];
   for(let i = 0; i <= 10; i++) {
-    arr.Push(6 * i);
+    arr.push(6 * i);
   }
   return arr;
 }

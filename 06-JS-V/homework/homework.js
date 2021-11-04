@@ -15,7 +15,7 @@ function crearUsuario() {
        this.email = opciones.email,
        this.password = opciones.password,
        this.saludar = function () {
-        return "hola, mi nombre es " + this.nombre;
+        return "Hola, mi nombre es " + this.nombre;
       };
     }
   } 
@@ -37,7 +37,7 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
-  String.prototype.reverse() = function() {
+  String.prototype.reverse = function() {
     return this.split('').reverse().join("");
   }
 }
